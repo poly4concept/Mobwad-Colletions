@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font: 16px;
+    background-color: black;
+    color: white;
+}
+#header{
+    background-color: rgba(12, 11, 11, 0.993);
+    position: relative;
+    color: white;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+#transparent-header{
+    background: transparent;
+}
+#header-tagline{
+    margin-top: -12px;
+}
+hr{
+    margin-top: -1rem;
+    margin-bottom: 10px;
+}
+#nav-bar a{
+    text-decoration: none;
+    padding-right: 1rem;
+    color: white;
+}
+#aboutus-section{
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+    padding: 20rem;
+    color: white;   
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(https://static.wixstatic.com/media/776d5a_e4dc8461abb4423d9476004b9a97b246~mv2.png/v1/fill/w_584,h_347,al_c,lg_1,q_85/776d5a_e4dc8461abb4423d9476004b9a97b246~mv2.webp);
+}
+#aboutus-heading{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+}
+#aboutus-link{
+    display: block;
+    text-decoration: none;
+    border:  2px white solid;
+    padding: 10px 7px;
+    width: 10rem;
+    color: white;
+}
+#aboutus-link:hover{
+    background-color: white;
+    color: black;
+}
+#ourservices-heading{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 5rem;
+}
+#ourservices-description{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+#ourservices-container{
+    display: flex;
+    flex-direction: row;
+}
+#cake-img, #decoration-img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#excellentcakes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 4rem;
+}
+#topnotchdecorations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 4rem;
+}
+#order-description{
+    text-align: center;
+}
+#order-link{
+    display: block;
+    text-decoration: none;
+    border:  2px white solid;
+    padding: 10px 7px;
+    width: 10rem;
+    color: white;
+    align-self: center;
+    margin-left: 36rem;
+    text-align: center;
+}
+#order-link:hover{
+    background-color: white;
+    color: black;
+}
+#Contact-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+#input-name{
+    border: white 2px solid;
+    background-color: black;
+    padding: 5px;
+    width: 30rem;
+    height: 3rem;
+    color: white;
+}
+#input-email{
+    border: white 2px solid;
+    background-color: black;
+    padding: 5px;
+    width: 30rem;
+    height: 3rem;
+    color: white;
+}
+#input-phone{
+    border: white 2px solid;
+    background-color: black;
+    padding: 5px;
+    width: 30rem;
+    height: 3rem;
+    color: white;
+}
+textarea {
+    border: white 2px solid;
+    background-color: black;
+    padding: 5px;
+    width: 30rem;
+    height: 10rem;
+    color: white;
+}
+#submit{
+    width: 10rem;
+    height: 3rem;
+    background-color: white;
+    border: white 1px solid;
+    cursor: pointer;
+    opacity: 0.8;
+}
+#submit:hover{
+    opacity: 1;
+}
+#input-design{
+    margin-bottom: 10px;
+    margin-left: 5rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15rem;
+}
+#footer-item1{
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+}
+#footer-items{
+    display: inline-block;
+    text-align: center;
+}
+#copyright{
+    font-size: x-small;
+    font-weight: lighter;
+    text-align: center;
+}
+/*For android users*/
+@media screen and (min-device-width : 320px) and (max-width: 480px){
+    #header{
+        padding: 2rem;
+    }
+    #aboutus-section{
+        width: 100%;
+        padding: 3rem;
+        height: auto;
+    }
+    #ourservices-container{
+        flex-direction: column;
+    }
+    #Contact-section{
+        flex-direction: column;
+    }
+    footer{
+        margin: 0 2rem;
+    }
+    #input-design{
+        margin-left: 0; 
+    }
+    #input-name, #input-phone , #input-email, textarea{
+        width: 20rem;
+    }
+    #order-link{
+        margin: 30%;
+    }
+    #footer-item1{
+        margin-left: 15%;
+        margin-right: 15%;
+        white-space: nowrap;
+        font-size: larger;
+    }
+}
+/*For Tablet Users*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
